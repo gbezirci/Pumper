@@ -1,3 +1,4 @@
+import HotPriceStats from '~/components/hot-price';
 import TownList from '~/components/town';
 
 export default function Home() {
@@ -6,9 +7,11 @@ export default function Home() {
   return (
     <>
       <div className="grid grid-cols-2 grid-flow-col"></div>
-      <div>Home</div>
 
-      <TownList />
+      <HotPriceStats />
+      <div className="mt-5">
+        <TownList />
+      </div>
     </>
   );
 }

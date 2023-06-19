@@ -21,12 +21,12 @@ export default function TownList() {
       <thead>
         <tr>
           <th className="px-4 py-2">Name</th>
-          <th className="px-4 py-2">Email</th>
+          <th className="px-4 py-2">Price</th>
         </tr>
       </thead>
       <tbody>
-        {towns.map((item) => (
-          <tr key={item.id}>
+        {towns.map((item, idx) => (
+          <tr key={idx}>
             <td className="border px-4 py-2">{item}</td>
             <td className="border px-4 py-2">{value[item]}</td>
           </tr>
